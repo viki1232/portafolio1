@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">HOME</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">ABOUT</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">MY SKILLS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Vista previa -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">victoria salerno</h1>
+        <p class="home__subtitle">WEB-DEVELOPER, PYTHON PROGRAMMER</p>
+      </section>
+      <!-- Acerca de mí -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">ABOUT ME</h2>
+        <div class="about__info info-block">
+          <div class="info-block__text">
+            <h4>Sobre mí</h4>
+            <ul>
+              <li>Soy una persona paciente, con habilidad para colaborar en equipo y resolver conflictos, lo que me convierte en un buen elemento en entornos colaborativos, especialmente en programación y desarrollo de proyectos.</li>
+            </ul>
+        
+            <h4>Habilidades técnicas</h4>
+            
+            <ul>
+                <li>Tengo una buena base en programación y desarrollo web:</li><br>
+                <li>Python: Manejo de condicionales, bucles, variables y funciones.</li>
+                <li>Pygame Zero: Creación de juegos básicos.</li>
+                <li>Desarrollo web: Conocimientos en HTML, CSS, JavaScript, Flask y Jinja.</li>
+                <li>Bots de Discord: Desarrollo y uso de herramientas de Discord Developer.</li>
+                <li>Bots de WhatsApp: Desarrollo y uso de apis como meta y librerias como baileys </li>
+                <li>Bases de datos: Gestión básica de datos.</li>
+                <li>Conocimientos en Node.js</li>
+            </ul>
+        
+            <h4>Fortalezas</h4>
+            <ul>
+              <li>Soy analítica, tomo decisiones informadas y tengo una gran disposición para <br>aprender y mejorar, reconociendo mis errores para crecer como programadora.</li>
+            </ul>
+            <h4>Aplicación de mis conocimientos</h4>
+            
+            <ul>
+                <li>puedo implementar mis habilidades en:</li><br>
+                <li>Desarrollo de aplicaciones web con Flask.</li>
+                <li>Creación de juegos con Pygame Zero.</li>
+                <li>Desarrollo de bots de Discord y whatsapp para automatizar tareas.</li>
+                <li>Sistemas analíticos en Python para generar reportes y análisis.</li>
+            </ul>
+        </div>
+          <img
+            class="info-block__img"
+            src="../static/img/WhatsApp Image 2024-12-28 at 11.33.18-fotor-20241228113612.png"
+            alt="me"
+            width="250"
+            height="250"
+          />
+        </div>
+      </section>
+      <!-- Sección de competencias -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">MY SKILLS</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/python.png"
+                alt="python"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Juegos</span>
+              <a class="project__link" href="#" onclick="openModal('../static/img/juegoss.jpeg'); return false;">Mostrar</a>
+                
+              </a>
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/discord.png"
+                alt="discord"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Bot de discord ambiental</span>
+              
+               <a class="project__link" href="#" onclick="openModal('../static/img/botambiental.jpeg'); return false;">Mostrar</a>
+              </a>
+            </li>
+            <li class="skills-list__skill skill">
+              <img class="skill__img" src="../static/img/html.png" alt="html" width="150" height="150">
+              <span class="skill__info">Página web</span>
+              <a class="project__link" href="#" onclick="openModal('../static/img/paginaweb.jpeg'); return false;">Mostrar</a>
+            </li>
+
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/db.webp"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Bot de WhatsApp </span>
+              <a href="https://github.com/viki1232/pythonpro/tree/main/m4l2">
+                <a class="project__link" href="#" onclick="openModal('../static/img/botdewhats.jpeg'); return false;">Mostrar</a>
+              </a>
+            </li>
+          </ul>
+        </form>
+
+        
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
+              <span>Calculadora energética</span>
+              <a class="project__link" href="#" onclick="openModal('../static/img/calculadoraene.jpeg'); return false;">Mostrar</a>
+          </div>
+   
+      </section>
+      <!-- Formulario de contacto -->
+      <section class="main__feedback feedback" id="feedback">
+        <h2 class="feedback__title">FEEDBACK</h2>
+
+        
+
+        <form class="feedback__form form" id="form">
+            <label for="name">
+                <input type="text" class="form__input" name="name" id="name" placeholder="Nombre" required>
+            </label>
+            <label for="email">
+                <input type="email" class="form__input" name="email" id="email" placeholder="Email" required>
+            </label>
+            <label for="asunto">
+                <input type="text" class="form__input" name="asunto" id="asunto" placeholder="Asunto" required>
+            </label>
+            <label for="message">
+                <textarea name="message" class="form__input" id="message" required placeholder="Comment"></textarea>
+            </label>
+            <button class="form__button" type="submit">SEND</button>
+
+
+        </form>
+    </section>
+
+    </main>
+    <!-- Pie de página con enlaces a redes sociales -->
+    
+    <footer class="footer">
+     
+    </footer>
+
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+      emailjs.init("r6872ASCSJb36RARe");
+      const form1 = document.getElementById("form");
+
+
+      form1.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+
+        emailjs.sendForm("service_z95vf8f", "template_w43a7fm", this)
+          .then(function () {
+            alert("Mensage enviado correctamente!");
+            form1.reset();
+          }, function (error) {
+            alert("Error al enviar el mensaje, por favor intenta de nuevo más tarde.");
+          });
+      });
+      function openModal(imgPath) {
+        document.getElementById('modal-img').src = imgPath;
+        document.getElementById('project-modal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal() {
+        document.getElementById('project-modal').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    </script>
+
+    <div id="project-modal" class="modal" style="display:none;">
+      <span class="modal-close" onclick="closeModal()">X</span>
+      <img id="modal-img" class="modal-img" src="" alt="Proyecto grande">
+    </div>
+  </body>
+</html>
